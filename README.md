@@ -1,5 +1,5 @@
 # Simple-HTML-form
-This is a simple html form using javascript, css, html created as internship assignment.
+This is a simple html form using javascript, css, html created as an internship assignment.
 
 Form is having the following fields
 1. Name
