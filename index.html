@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Health Report Form</title>
+    <link rel="stylesheet" href="/AnExtraRep Webdev internship/styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h2 class="form-header">Health Report Form</h2>
+        <form id="healthReportForm" method="POST" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+                <div id="nameError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="text" id="age" name="age" required placeholder="Enter your age">
+                <div id="ageError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="weight">Weight:</label>
+                <input type="text" id="weight" name="weight" required placeholder="Enter your weight">
+                <div id="weightError" class="error-message"></div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                <div id="emailError" class="error-message"></div>
+                <div class="form-info">We'll never share your email with anyone. Read our <a href="#">privacy
+                        policy</a>.</div>
+            </div>
+            <div class="form-group">
+                <label for="healthReport">Upload Health Report:</label>
+                <label class="file-label">
+                    <span>Select File</span>
+                    <input type="file" id="healthReport" name="healthReport" required accept=".pdf">
+                </label>
+                <div id="healthReportError" class="error-message"></div>
+            </div>
+            <div class="form-group" style="text-align: center;">
+                <input type="submit" value="Submit" onclick="validateForm()">
+            </div>
+        </form>
+    </div>
+</body>
+
+<script src="/AnExtraRep Webdev internship/main.js"></script>
+
+</html>
